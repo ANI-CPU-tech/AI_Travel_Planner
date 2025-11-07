@@ -1,0 +1,95 @@
+.planner-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.planner-header {
+  color: var(--primary);
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.plan-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.plan-card {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.plan-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.plan-title {
+  font-size: 1.5rem;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+  padding: 1.5rem 1.5rem 0;
+}
+
+.plan-dates {
+  color: var(--gray-600);
+  font-size: 0.875rem;
+  padding: 0 1.5rem;
+}
+
+.plan-summary {
+  padding: 1rem 1.5rem;
+  color: var(--gray-600);
+  border-bottom: 1px solid var(--gray-200);
+}
+
+.plan-details {
+  border: none;
+  padding: 1rem 1.5rem;
+}
+
+.plan-details summary {
+  color: var(--primary);
+  font-weight: 500;
+  cursor: pointer;
+  user-select: none;
+}
+
+.plan-details summary:hover {
+  color: var(--primary-dark);
+}
+
+.plan-details pre {
+  margin-top: 1rem;
+  background: var(--gray-100);
+  padding: 1rem;
+  border-radius: var(--radius-md);
+  font-size: 0.875rem;
+}
+
+.plan-action {
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.plan-button {
+  background-color: var(--primary);
+  color: var(--white);
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  width: 100%;
+}
+
+.plan-button:hover {
+  background-color: var(--primary-dark);
+}
