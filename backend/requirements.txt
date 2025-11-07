@@ -1,4 +1,12 @@
 Django>=5.0,<6.0
-python-dotenv
+djangorestframework>=3.14.0
+django-cors-headers>=4.3.0
+python-dotenv>=1.0.0
+requests>=2.31.0
+Pillow>=10.1.0
+google-ai-generativelanguage>=0.4.0
+google-cloud-aiplatform>=1.36.4
+python-slugify>=8.0.1
+django-cleanup>=8.0.0
 
 
